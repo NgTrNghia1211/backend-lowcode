@@ -1,9 +1,10 @@
 import { Global, Module, Provider } from "@nestjs/common";
 import { ApiConfigService } from "./services/api-config.service";
-
+import { PrismaService } from "./services/prisma.service";
 
 const providers: Provider[] = [
-	ApiConfigService
+	ApiConfigService, 
+	PrismaService,
 ]
 
 @Global()
